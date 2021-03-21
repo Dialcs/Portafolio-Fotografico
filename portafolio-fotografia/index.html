@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d47aade6c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio Fotografico</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Diego Castillo</h1>
+                <p>Desarrollador Web</p>                
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">                
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">    
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades ciudad carro auto autos carros calles calle"
+                data-descripcion="Fotografia de una calle de la ciudad."
+            >            
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>    
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="persona personas mujeres mujer dama señorita damas señoritas"
+                data-descripcion="Fotografia retrado a una persona."
+            >            
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>     
+
+            <div class="item" 
+                data-categoria="paisajes" 
+                data-etiquetas="paisaje paisajes playa playas montaña montañas agua aguas"
+                data-descripcion="Fotografia paisaje a la costa."
+            >            
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>    
+
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animal animales leon leones selva"
+                data-descripcion="Fotografia retrato a un leon."
+            >            
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animal animales panda pandas oso osos"
+                data-descripcion="Fotografia a un oso panda."
+            >            
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="persona personas mujeres mujer dama señorita damas señoritas"
+                data-descripcion="Fotografia retrado a una persona."
+            >            
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="paisajes" 
+                data-etiquetas="paisaje paisajes montaña montañas niebla neblina cielo"
+                data-descripcion="Fotografia paisaje a montañas."
+            >            
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades ciudad carro auto autos carros calles calle mar edificios edificio costa"
+                data-descripcion="Fotografia paisaje a la ciudad en la costa."
+            >            
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="planta plantas hojas hoja natraleza"
+                data-descripcion="Fotografia retrato a las hojas."
+            >            
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com/DiegoCastillo_S" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/profile.php?id=100001056349888" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/diegocastillo.s/?hl=es-la" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por : Diego Castillo / 940657764</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
